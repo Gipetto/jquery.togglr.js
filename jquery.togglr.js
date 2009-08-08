@@ -14,7 +14,7 @@
 // WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. 
 // **********************************************************************
-(function($){
+;(function($){
 	/**
 	 * togglr is a quick function to take an array of links and tranform
 	 * them in to toggle switches for the div that is targeted in the
