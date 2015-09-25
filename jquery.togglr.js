@@ -1,10 +1,10 @@
 /**
  * jQuery Quick Toggler Plugin
- * version .9
- * @requires jQuery v1.3 or later (might work on earlier versions, I didn't bother to test)
+ * version 0.9.1
+ * @requires jQuery v2 or later
  * @author Shawn Parker (shawn at topfroggraphics dot com)
  */
-// Copyright (c) 2009 Shawn Parker. All rights reserved.
+// Copyright (c) 2015 Shawn Parker. All rights reserved.
 //
 // Released under the GPL license
 // http://www.opensource.org/licenses/gpl-license.php
@@ -66,7 +66,7 @@
 		// build a callback function that bitch slaps IE's opacity issues in to line		
 		var ieFixCallback = function(_t,_c) {
 			return function() {
-				if(jQuery.browser.msie) {
+		        if (navigator.userAgent.match(/msie/i) ){
 					// remove the filter attribute so that cleartype font smoothing can be applied
 					try { _t.get(0).style.removeAttribute('filter'); }
 					catch(durr) {} // satisfy older opera versions
